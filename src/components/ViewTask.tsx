@@ -1,5 +1,3 @@
-import React from "react";
-
 const ViewTask = () => {
   return (
     <div className="relative mx-19 p-6 w-full max-w-[959px] max-h-[837px] border border-n-4 shadow-boder">

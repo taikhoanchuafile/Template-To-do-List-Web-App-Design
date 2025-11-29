@@ -1,5 +1,3 @@
-import React from "react";
-
 const SignIn = () => {
   return (
     <div className="w-full h-full relative bg-[url(/bg-signup.webp)] bg-center bg-cover bg-no-repeat flex items-center justify-center rounded-card-0">
