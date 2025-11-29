@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color */
+  --color-primary: hsla(0, 100%, 70%, 1);
+  --color-primary-hover: hsla(0, 100%, 78%, 1);
+  --color-foreign: hsla(14, 89%, 53%, 1);
+
+  --color-border: hsla(0, 1%, 33%, 1);
+  --color-n-1: hsla(0, 0%, 100%, 1);
+  --color-n-2: hsla(210, 31%, 98%, 1);
+  --color-n-3: hsla(0, 0%, 60%, 1);
+  --color-n-4: hsla(227, 6%, 65%, 0.63);
+  --color-n-5: hsla(228, 6%, 65%, 1);
+  --color-n-6: hsla(0, 0%, 45%, 1);
+  --color-n-7: hsla(227, 6%, 65%, 0.41);
+
+  --color-n-h1: hsla(210, 8%, 14%, 1);
+  --color-link: hsla(202, 100%, 43%, 1);
+  --color-date: hsla(200, 100%, 61%, 1);
+  --color-priority-1: hsla(200, 73%, 57%, 1);
+  --color-status-1: hsla(0, 89%, 53%, 1);
+  --color-status-2: hsla(232, 100%, 50%, 1);
+  --color-status-3: hsla(119, 99%, 32%, 1);
+
+  --color-nav: hsla(0, 0%, 97%, 1);
+
+  /* rounded */
+  --radius-card-0: 10px;
+  --radius-input: 8px;
+  --radius-button: 5px;
+  --radius-menu: 14px;
+  --radius-base: 16px;
+
+  /* shadow */
+  --shadow-border-0: 5px 4px 14px 0px hsla(0, 0%, 0%, 0.04),
+    20px 16px 26px 0px hsla(0, 0%, 0%, 0.03),
+    45px 36px 34px 0px hsla(0, 0%, 0%, 0.02),
+    80px 64px 41px 0px hsla(0, 0%, 0%, 0.01),
+    124px 100px 45px 0px hsla(0, 0%, 0%, 0);
+  --shadow-boder: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+
+  --shadow-button-hover: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25) inset;
+  --shadow-nav: 0px 4px 12px 0px hsla(0, 0%, 0%, 0.07);
+
+  /* font */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-lobster: "Lobster", sans-serif;
+}
+
+@layer utilities {
+  .container {
+    @apply m-auto w-full max-w-[1536px] h-screen max-h-[1100px] flex items-center justify-center px-8 py-4;
+  }
+}
+@layer components {
+  .sub-text {
+    @apply font-montserrat font-medium text-base leading-[100%] tracking-normal;
+  }
+  .sub-text-msb-sm {
+    @apply font-montserrat font-semibold text-sm leading-[100%] tracking-normal;
+  }
+  .input-wrapper {
+    @apply border border-border rounded-input flex gap-5 px-5 py-4;
+  }
+  .logo {
+    @apply font-inter font-semibold text-[2rem] leading-none tracking-normal;
+  }
+  .text-inter-500 {
+    @apply font-inter font-medium text-base leading-none tracking-normal;
+  }
+  .text-inter-400 {
+    @apply font-inter font-normal text-xs leading-none tracking-normal text-n-5;
+  }
+  .desc-title {
+    @apply font-inter font-bold text-base leading-[180%] tracking-normal;
+  }
+  .desc-article {
+    @apply font-inter font-normal text-base text-n-6 leading-[180%] tracking-normal;
+  }
+}
+@layer base {
+  html {
+    @apply text-xs lg:text-sm 2xl:text-base;
+  }
+  button {
+    @apply md:w-fit py-5 px-8 rounded-button bg-primary text-n-2 hover:bg-primary-hover transition duration-300 ease-out font-montserrat font-medium text-base leading-[100%] cursor-pointer;
+  }
+  h1 {
+    @apply text-center md:text-start font-montserrat font-bold text-4xl tracking-normal leading-[100%] text-n-h1 capitalize;
+  }
+  h2,
+  h3,
+  span {
+    @apply capitalize;
+  }
+  nav ul li {
+    @apply rounded-menu p-4 font-inter font-medium text-base leading-none tracking-normal hover:bg-primary-hover;
+  }
+}
