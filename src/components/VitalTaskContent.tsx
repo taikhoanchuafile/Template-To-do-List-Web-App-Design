@@ -15,7 +15,7 @@ const VitalTaskContent = () => {
         </div>
       </div>
       {/* phan 2 */}
-      <div className="relative px-5 py-4 rounded-base shadow-border border border-n-4 2xl:max-w-[511px] max-h-[837px] overflow-auto">
+      <div className=" px-5 py-4 rounded-base shadow-border border border-n-4 2xl:max-w-[511px] max-h-[837px] overflow-auto">
         <div className="flex gap-4">
           <img className="size-40" src="Rectangle-10.svg" alt="Rectangle-10" />
           <div className="space-y-4 mt-16">
@@ -50,7 +50,7 @@ const VitalTaskContent = () => {
             <li>Listen to music or an upbeat playlist</li>
           </ol>
         </div>
-        <div className="flex gap-3 justify-end absolute bottom-4 right-5">
+        <div className="flex gap-3 justify-end absolute bottom-8 right-25">
           <button className="p-2">
             <img src="/iconBin.svg" alt="bin icon" />
           </button>

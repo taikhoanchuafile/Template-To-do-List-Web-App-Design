@@ -1,6 +1,6 @@
 const ViewTask = () => {
   return (
-    <div className="relative mx-19 p-6 w-full max-w-[959px] max-h-[837px] border border-n-4 shadow-boder">
+    <div className="md:ml-100 mx-19 p-6 w-full max-w-[959px] max-h-[837px] border border-n-4 shadow-boder overflow-auto">
       <div className="flex gap-4">
         <img className="size-53" src="Rectangle-10.svg" alt="Rectangle-10" />
         <div className="space-y-4">
@@ -29,7 +29,7 @@ const ViewTask = () => {
         </li>
       </ol>
       <ul className="mt-8">
-        <caption className="desc-title">Optional:</caption>
+        <li className="desc-title">Optional:</li>
         <li className="desc-title font-normal text-n-6">
           Paper cone-shaped party hats, paper whistles that unroll
         </li>
@@ -42,7 +42,7 @@ const ViewTask = () => {
           chips…THEN cake & candles and the song
         </li>
       </ul>
-      <div className="flex gap-3 justify-end absolute bottom-4 right-5">
+      <div className="flex gap-3 justify-end absolute bottom-8 right-25">
         <button className="p-2">
           <img src="/iconBin.svg" alt="bin icon" />
         </button>

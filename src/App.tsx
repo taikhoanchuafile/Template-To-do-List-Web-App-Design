@@ -18,31 +18,31 @@ const router = createBrowserRouter([
     path: "/",
     element: <AppRoutes />,
     children: [
+      // {
+      //   element: <ProtectedUser />,
+      //   children: [
       {
-        element: <ProtectedUser />,
+        path: "",
+        element: <Home />,
         children: [
+          { path: "", element: <DashboardContent /> },
           {
-            path: "",
-            element: <Home />,
-            children: [
-              { path: "", element: <DashboardContent /> },
-              {
-                path: "vitaltask",
-                element: <VitalTaskContent />,
-              },
-              { path: "mytask", element: <MyTaskContent /> },
-              {
-                path: "accountinformation",
-                element: <AccountInfomation />,
-              },
-              { path: "changepassword", element: <ChangePassword /> },
-              { path: "viewtask", element: <ViewTask /> },
-              { path: "taskcategory", element: <TaskCategory /> },
-              { path: "createcategory", element: <CreateCategory /> },
-            ],
+            path: "vitaltask",
+            element: <VitalTaskContent />,
           },
+          { path: "mytask", element: <MyTaskContent /> },
+          {
+            path: "accountinformation",
+            element: <AccountInfomation />,
+          },
+          { path: "changepassword", element: <ChangePassword /> },
+          { path: "viewtask", element: <ViewTask /> },
+          { path: "taskcategory", element: <TaskCategory /> },
+          { path: "createcategory", element: <CreateCategory /> },
         ],
       },
+      // ],
+      // },
       { path: "signup", element: <SignUp /> },
       { path: "signin", element: <SignIn /> },
     ],

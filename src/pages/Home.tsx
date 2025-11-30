@@ -13,7 +13,7 @@ const Home = () => {
           <div className="w-5 h-1 bg-black border border-black"></div>
         </button>
         <SideNav />
-        <div className="pb-4 flex justify-end h-full">
+        <div className="pb-4 flex justify-end h-full relative">
           <Outlet></Outlet>
         </div>
       </div>

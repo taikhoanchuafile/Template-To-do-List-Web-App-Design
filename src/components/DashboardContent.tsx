@@ -187,7 +187,7 @@ const DashboardContent = () => {
       {/* diablog add new task */}
       <Modal open={openNewTask} onClose={() => setOpenNewTask(false)}>
         <div
-          className="bg-n-1 rounded-button shadow-border-0 px-15 py-12 w-full h-full max-w-[918px] max-h-[708px]"
+          className="bg-n-1 rounded-button shadow-border-0 p-6 sm:px-15 sm:py-12 w-full h-full max-w-[918px] max-h-[708px]"
           onClick={(e) => e.stopPropagation()} // chặn click xuyên
         >
           <div className="flex justify-between items-center">
@@ -205,8 +205,11 @@ const DashboardContent = () => {
             </button>
           </div>
 
-          <form action="">
-            <div className="flex gap-4 flex-1 px-4 py-3 mt-10 flex-col border border-n-4 w-full h-full max-w-[794px] max-h-[476px]">
+          <form
+            action=""
+            className="w-full h-full max-w-[794px] lg:max-h-[476px] mt-10"
+          >
+            <div className="flex gap-4 flex-1 px-4 py-3  flex-col border border-n-4 ">
               <div className="space-y-2">
                 <label className="sub-text-msb-sm" htmlFor="firstname">
                   Title
@@ -229,7 +232,7 @@ const DashboardContent = () => {
               </div>
               <div className="sub-text-msb-sm">
                 Priority
-                <div className="mt-2 flex gap-13">
+                <div className="mt-2 flex gap-4 sm:gap-13 flex-wrap">
                   <div className="flex gap-2 items-center">
                     <div className="size-2 rounded-full bg-status-1"></div>
                     <label className="text-inter-400 text-sm" htmlFor="extreme">
@@ -258,14 +261,14 @@ const DashboardContent = () => {
               </div>
 
               {/* modal-cuoi */}
-              <div className="flex gap-9">
+              <div className="flex flex-wrap gap-2 md:gap-9 ">
                 <div className="logo text-sm flex flex-col gap-2">
                   Task Description
                   <textarea
                     cols={100}
                     rows={50}
                     placeholder="Start writing here....."
-                    className="resize-none p-4 max-w-[511px] max-h-[205px] border border-n-5 rounded-md"
+                    className="resize-none p-4 w-full max-w-[511px] max-h-[205px] border border-n-5 rounded-md"
                   />
                 </div>
                 <div className="logo text-sm flex flex-col gap-2">
@@ -274,7 +277,7 @@ const DashboardContent = () => {
                     onClick={() =>
                       document.getElementById("fileInput")?.click()
                     }
-                    className="px-9 py-6 max-w-[214px] max-h-[205px] border border-n-5 rounded-md flex flex-col items-center cursor-pointer"
+                    className="w-full h-full px-9 py-6 max-w-[214px] max-h-[205px] border border-n-5 rounded-md flex flex-col items-center cursor-pointer"
                   >
                     <img src="/iconPicture.svg" alt="icon upload" />
                     <p className="mt-6 sub-text font-normal text-xs">
