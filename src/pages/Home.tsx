@@ -12,9 +12,9 @@ const Home = () => {
           <div className="w-5 h-1 bg-black border border-blackborder border-black"></div>
           <div className="w-5 h-1 bg-black border border-black"></div>
         </button>
-        <div className="mt-40 bg-primary h-full text-n-1 -translate-x-full opacity-0 md:translate-x-0 md:opacity-100 peer-focus:translate-x-0 peer-focus:opacity-100 transition-all duration-500">
+        <div className="mt-39 bg-primary h-full text-n-1 -translate-x-full opacity-0 md:translate-x-0 md:opacity-100 peer-focus:translate-x-0 peer-focus:opacity-100 transition-all duration-500">
           <SideNav />
-          <button className="absolute bottom-1/4 left-5 p-4" type="button">
+          <button className="absolute bottom-[22%] left-5 p-4" type="button">
             <a href="/signin">
               <div className="flex gap-4 items-center">
                 <img src="/iconLogout.svg" alt="icon logout" />
@@ -24,7 +24,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="pb-4 flex justify-end h-full pt-35 overflow-auto">
+      <div className="pb-4 flex justify-end h-full pt-39 overflow-auto">
         <Outlet></Outlet>
       </div>
     </div>
